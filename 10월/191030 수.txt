@@ -1,0 +1,63 @@
+[ 할 거 ]
+맵 띄위기 ㅇㅇ(800 600)
+종료버튼 ㅇㅇ
+플레이어 얼굴 나오게 하기 ㅇㅇ
+- 컨트롤들을 일괄적으로 클로즈할수 없나?
+HP MP EXP ㅇㅇ
+-컨트롤 개별 해제야하 하나?
+플레이어(크기 줄여서) ㅇㅇ
+좌우 이동 ㅇㅇ
+점프 ㅇㅇ
+- 키 입력 여러개가 안된다. 일단 넘어감.
+총알 발사
+- 일단 이미지 크기 맞추자. ㅇㅇ
+- 플레이어 머리 위에 생기도록 하자.
+- 'a'키를 누르면 위쪽으로 발사시키도록 한다.
+- 점프 중일땐 총발사 안되도록
+- 여러발 발사(풀링)
+
+충돌 판정 -> ?
+위에서 내려오는 운석
+좌우로 가끔씩 발사되는 새
+
+
+
+[ 한 거 ]
+CTRCommandTarget : 순수 가상 함수 추가 -> 삭제(해당 클래스를 상속받는 것들이 너무 많음)
+- 상속의 단점 또 하나 : 변경이 어렵고 예측못한 현상이 발생할 수 있음.
+- 부모클래스 함부로 변경하지 말것 : 관련 클래스 전부 컴파일 해야 함.
+
+NULL과 nullptr이 있는데 프로젝트가 NULL을 쓰니 nullptr이 아니라 NULL을 쓰자.(통일성)
+
+CGUIExampleDialog
+CGUIExampleStaticText
+CGUIExampleImageControl
+CGUIExampleImageButton
+CGUIExampleFrameButton
+CGUIExampleEditControl
+CGUIExampleFormatedText
+CGUIExampleSliderControl
+CGUIExampleListBox
+CGUIExampleWeddingPopDlg
+
+
+
+[ 안 거 ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,63 @@
+[ 할 거 ]
+RankDlg ㅇㅇ
+GiveDlg ㅇㅇ
+컨트롤러 및 팝업 클래스 수정 ㅇㅇ
+- init, show 분리할 것 ㅇㅇ
+- nullptr  방어코드 넣을 것 ㅇㅇ
+-  show, close  같이 호출할 것 ㅇㅇ
+셀렉트 아이템 gui를 RankDlg, GiveDlg에 추가할 것 ㅇㅇ
+기브에서 가끔터지는 문제 수정할 것
+- 배열에 -1이 넘어가서 터졌던 것이다.
+
+
+
+[ 한 거 ]
+옵저버 패턴(shared_ptr) 구현
+TRGuildWorkshop_Popup 클래스
+onButtonClick 함수 부분
+- Init 처리후 해당 반환값을 기준으로 이후 처리 결정
+
+CTRWorkshopController 클래스
+- m_arrBase 선언과 동시에 모든 아이템에 nullptr 셋팅
+- Init 함수 변경 : 반환값 던지도록 수정(어떤 버튼인지, 몇번째 버튼인지)
+- showDialog 함수 작성 
+ =>nullptr 검사후 실행
+ =>close, show 호출
+close -> show 할때 터지는 문제 수정중
+- array에 있는 쓰레기값들 때문에 문제였음 nullptr도 아니고 진짜값도 아니니...
+파일명엔 C를 붙이지 않는다. 이해했음.
+
+
+
+
+
+[ 안 거 ]
+함수 반환 튜플은 {}를 하자.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

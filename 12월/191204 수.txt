@@ -1,0 +1,50 @@
+[ 할 거 ]
+Decorator ㅇㅇ
+03. List 틀잡기 ㅇㅇ
+03. List gui마다 필요한 요소 캐싱해두기 ㅇㅇ
+List Piece 구조체 작성 ㅇㅇ
+
+
+
+[ 한 거 ]
+TRGuildWorkshop_GUI
+- showDialog(), closeDialog()를 virtual abstract로 추가
+
+CTRWorkshopList
+- 할당시 nullptr 체크
+- shoDialog()할때 try_catch
+
+열거형을 같이쓰니까 너무 번거롭다. 이거 전체적으로 수정해야함. ㅇㅇ
+
+
+
+[ 안 거 ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

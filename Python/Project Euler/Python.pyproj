@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{dad1ffd4-2cee-4915-a060-61204da3697d}</ProjectGuid>
     <ProjectHome />
-    <StartupFile>Problem4.py</StartupFile>
+    <StartupFile>Problem5.py</StartupFile>
     <SearchPath />
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -19,6 +19,9 @@
     <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Problem5.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Problem4.py">
       <SubType>Code</SubType>
     </Compile>

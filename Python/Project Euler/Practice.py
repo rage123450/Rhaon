@@ -1,18 +1,24 @@
-def Func(a,b):
-    len = b - a
+star = ["***","* *","***"]
 
-    if len == 1 or len == 2:
-        return len
-    idx = 2
-    while True:
-        if len <= idx ** 2:
-            if len <= (idx ** 2) - idx:
-                return 2 * (idx - 1)
-            else:
-                return 2 * idx - 1
-        idx+=1
+n = int(input())
 
-tlist = [list(map(int,input().split())) for _ in range(int(input()))]
+def get_star(n):
+    mat = []
+    l = len(n)
+    for i in range(l * 3):
+        if i // 3 == 1:
+            mat.append(n[i % l] + " " * l + n[i % l])
+        else:
+            mat.append(n[i % l] * 3)
+    return list(mat)
 
-for a,b in tlist:
-    print(Func(a,b))
+k = 0
+while n != 3:
+    n = n // 3
+    k += 1
+
+for i in range(k):
+    star = get_star(star)
+
+for i in star:
+    print(i)

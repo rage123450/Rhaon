@@ -1,0 +1,39 @@
+[ 할 거 ]
+다음주 수요일에 "정화의 돌 건네주기" 작업 브랜치 뺀다.
+"정화의 돌 건네주기" ui 작업은 다음주 회의 예정
+
+
+
+
+[ 한 거 ]
+공방 리스트에서 아이템 구매후 TR 재접해야 깍임 ㅇㅇ
+- TR 갱신 함수 추가 및 성공 메시지 위치 변경
+
+진입부분 찾기 ㅇㅇ
+
+
+
+[ 안 거 ]
+TR 갱신 함수
+CNetClientManager::getInstance().requestCurrentTR();
+
+버튼 이벤트 달아줄 때 참고할 것
+CTRMultiNpcPopupComponent_Buttonfunction
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

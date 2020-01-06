@@ -1,0 +1,28 @@
+[ 할 거 ]
+
+
+
+[ 한 거 ]
+CTRGuildWorkshop_ProductionDlg::onRecvGuildPlantGetMakeStandByItemListOK와 같은 형태로
+CTRWorkshop_ListDlg::onRecvGuildPlantGetPlantItemListOK 수정 
+-> 가끔씩 리스트 이상하게 뿌려지는 현상이 발생해서
+
+onRecvGuildPlantBuyItemOK 수정
+- 최대 구매 갯수 제한 있는 아이템 맥스되면 리스트 업데이트도록 수정
+
+
+
+[ 안 거 ]
+
+
+
+
+
+
+
+
+
+
+
+
+

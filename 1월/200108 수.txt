@@ -1,0 +1,30 @@
+[ 할 거 ]
+
+
+
+[ 한 거 ]
+가위바위보 난수는 #include <random>를 사용하자.
+random_device
+mt19937_64
+uniform_int_distribution<__int64>
+
+가위바위보 로직 작성
+
+개인,단체전 가위바위보 기획 내용 정리 및 설계
+
+
+
+[ 안 거 ]
+
+
+
+
+
+
+
+
+
+
+
+
+

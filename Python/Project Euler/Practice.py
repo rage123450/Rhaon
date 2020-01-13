@@ -1,33 +1,26 @@
-N,M = map(int,input().split())
-data = [ i + 1 for i in range(N)]
-check = [False] * N
-arr = []
-
-def DFS(n):
-    # 주어진 갯수만큼 채워지면 출력한다.
-    if n == M:
-        print(*arr)
-        return
-
-    # data 갯수만큼 순회한다.
-    for i in range(N):
-        # 이미 거쳐간 수라면 그냥 지나간다.
-        if check[i]:
-            continue
-
-        # i번째는 거쳐갈거라서 True로 바꾼다.
-        check[i] = True
-
-        # 데이터를 넣는다.
-        arr.append(data[i])
-
-        # 현재의 i를 기준으로 가지치기를 시작
-        DFS(n+1)
-
-        # 최근에 넣은 데이터 하나 뺀다.
-        arr.pop()
-
-        # 거쳐갔다는 걸 취소한다.
-        check[i] = False
-
-DFS(0)
+def adjacent(i):
+    for j in range(0,i):
+        # 새로운 퀸과 기존의 퀸이 같은 행에 있거나 대각선에 있을 경우
+        if row[j] == row[i] or abs(row[j]-row[i]) == (i-j):
+            return False
+    return True
+ 
+def dfs(i):
+    global result
+    if i == N:
+        result += 1
+    else:
+        # N개의 퀸을 배치해야하므로 무조건 모든 행에 퀸이 들어가야한다.
+        # 따라서 0열부터 N-1열까지 퀸을 놓는 방법을 for문을 통해 돌린다.
+        for j in range(N):
+            # i열에 있는 퀸의 행의 값 : row[i]
+            row[i] = j
+            # 유망한지(이전의 열로 인해 영향을 받는지) 검사하는 함수를 통해 걸러준다.
+            if adjacent(i):
+                dfs(i+1)
+ 
+N = int(input())
+row = [0]*N
+result = 0
+dfs(0)
+print(result)

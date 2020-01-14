@@ -1,26 +1,35 @@
-def adjacent(i):
-    for j in range(0,i):
-        # 새로운 퀸과 기존의 퀸이 같은 행에 있거나 대각선에 있을 경우
-        if row[j] == row[i] or abs(row[j]-row[i]) == (i-j):
-            return False
-    return True
- 
-def dfs(i):
-    global result
-    if i == N:
-        result += 1
+import sys
+input = sys.stdin.readline
+
+def cal(num,idx,add,sub,mul,div):
+    global n,maxv,minv
+    if idx == n:
+        maxv = max(num,maxv)
+        minv = min(num,minv)
+        return
     else:
-        # N개의 퀸을 배치해야하므로 무조건 모든 행에 퀸이 들어가야한다.
-        # 따라서 0열부터 N-1열까지 퀸을 놓는 방법을 for문을 통해 돌린다.
-        for j in range(N):
-            # i열에 있는 퀸의 행의 값 : row[i]
-            row[i] = j
-            # 유망한지(이전의 열로 인해 영향을 받는지) 검사하는 함수를 통해 걸러준다.
-            if adjacent(i):
-                dfs(i+1)
- 
-N = int(input())
-row = [0]*N
-result = 0
-dfs(0)
-print(result)
+        if add:
+            cal(num + data[idx],idx + 1,add - 1,sub,mul,div)
+            pass
+        if sub:
+            cal(num - data[idx],idx + 1,add,sub - 1,mul,div)
+            pass
+        if mul:
+            cal(num * data[idx],idx + 1,add,sub,mul - 1,div)
+            pass
+        if div:
+            cal(int(num / data[idx]),idx + 1,add,sub,mul,div - 1)
+            pass
+
+maxv = -sys.maxsize - 1
+minv = sys.maxsize
+
+n = int(input().strip())
+data = list(map(int,input().strip().split()))
+
+add,sub,mul,div = map(int,input().strip().split())
+
+cal(data[0],1,add,sub,mul,div)
+
+print(maxv)
+print(minv)

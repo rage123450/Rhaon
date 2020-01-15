@@ -1,0 +1,46 @@
+[ 할 거 ]
+
+
+
+[ 한 거 ]
+함수 전달하는 부분 bind로  수정 ㅇㅇ
+함수 체인 구현 ㅇㅇ
+개인전 구현 로드맵 정리
+- 보상 분류 UI 박스
+ = 서버로부터 목록을 받아서 초기화하면 됨.
+ = 현재 몇 라운드인지 알아야 함. 그래야 해당 보상템에 빛나는 연출을 시킬수 있음
+
+- 말풍선 
+ = 단계에 따라서 멘트 셋팅해주면 됨.
+ = 단계 변화하는 함수 만들어야 함.
+
+- 진행 단계에 따라서 바꿔야 하는 것들
+일단 진입했을 경우는 초기다.
+건네주기 버튼을 눌렀을 경우 진행 단계가 바뀐다.
+이후 건네주기 버튼은 가위바위보 선택 버튼으로 기능이 바뀐다.
+
+
+
+
+
+[ 안 거 ]
+[] functional member function c++
+클래스 멤버함수를 function<void(void)>로 전달이 안되는 문제
+https://stackoverflow.com/questions/7582546/using-generic-stdfunction-objects-with-member-functions-in-one-class
+
+비 정적 멤버 함수는 객체와 함께 호출해야합니다. 즉, 항상 "this"포인터를 인수로 암시 적으로 전달합니다.
+멤버함수는 this를 같이 전달해주자!
+1. 매개변수 : void
+std::function<void(void)> f = std::bind(&Foo::doSomething, this);
+
+2. 매개변수 : 있다면(1,2,3....)
+using namespace std::placeholders;
+std::function<void(int,int)> f = std::bind(&Foo::doSomethingArgs, this, _1, _2);
+
+
+
+
+
+
+
+

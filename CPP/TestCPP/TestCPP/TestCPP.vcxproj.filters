@@ -6,5 +6,9 @@
     <ClCompile Include="200113.cpp" />
     <ClCompile Include="200115.cpp" />
     <ClCompile Include="200116.cpp" />
+    <ClCompile Include="200121.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="std.h" />
   </ItemGroup>
 </Project>

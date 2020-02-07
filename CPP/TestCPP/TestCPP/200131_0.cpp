@@ -10,7 +10,7 @@ void Test(int(&t)[3])
 
 int main()
 {
-	Test({ 1,2,3 });
+	//Test({ 1,2,3 });
 
 
 	//vector<int> vec;

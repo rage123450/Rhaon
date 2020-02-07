@@ -1,0 +1,23 @@
+[ 할 거 ]
+
+
+
+[ 한 거 ]
+타임 사용 함수 작성
+사운드 타이밍 수정
+
+closeDialog()
+ CNetClientManager::getInstance().requestPrivateRSPClosed();
+
+
+
+[ 안 거 ]
+CGUIAnimatorEndCallback
+- 클로즈 할때 해당 컨트롤 비워줘야함
+
+디큐 : 공부할 것
+
+컨트롤 셋애니메이터 널 대입하면 그냥 애니메이터 정리됨
+- 엔드콜백함수쓸 때 클로즈에서 추가할 것
+
+

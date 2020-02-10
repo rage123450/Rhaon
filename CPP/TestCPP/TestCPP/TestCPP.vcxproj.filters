@@ -25,8 +25,13 @@
     <ClCompile Include="200131_0.cpp">
       <Filter>Record</Filter>
     </ClCompile>
-    <ClCompile Include="200207_0.cpp" />
-    <ClCompile Include="200207_1.cpp" />
+    <ClCompile Include="200207_0.cpp">
+      <Filter>Record</Filter>
+    </ClCompile>
+    <ClCompile Include="200210_1.cpp" />
+    <ClCompile Include="200210_0.cpp">
+      <Filter>Record</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="std.h" />

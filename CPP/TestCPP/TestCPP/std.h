@@ -5,5 +5,6 @@
 #include <functional>
 #include <algorithm>
 #include <memory>
+#include <list>
 
 using namespace std;

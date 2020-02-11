@@ -181,7 +181,10 @@
     <ClCompile Include="200210_0.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="200210_1.cpp" />
+    <ClCompile Include="200210_1.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="200210_2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="std.h" />

@@ -1,39 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="200121.cpp">
-      <Filter>Record</Filter>
-    </ClCompile>
-    <ClCompile Include="200108.cpp">
-      <Filter>Record</Filter>
-    </ClCompile>
-    <ClCompile Include="200109.cpp">
-      <Filter>Record</Filter>
-    </ClCompile>
-    <ClCompile Include="200113.cpp">
-      <Filter>Record</Filter>
-    </ClCompile>
-    <ClCompile Include="200115.cpp">
-      <Filter>Record</Filter>
-    </ClCompile>
-    <ClCompile Include="200116.cpp">
-      <Filter>Record</Filter>
-    </ClCompile>
-    <ClCompile Include="200122.cpp">
-      <Filter>Record</Filter>
-    </ClCompile>
-    <ClCompile Include="200131_0.cpp">
-      <Filter>Record</Filter>
-    </ClCompile>
     <ClCompile Include="200207_0.cpp">
       <Filter>Record</Filter>
     </ClCompile>
     <ClCompile Include="200210_0.cpp">
       <Filter>Record</Filter>
     </ClCompile>
-    <ClCompile Include="200210_2.cpp" />
     <ClCompile Include="200210_1.cpp">
       <Filter>Record</Filter>
+    </ClCompile>
+    <ClCompile Include="200212_0.cpp" />
+    <ClCompile Include="200108.cpp">
+      <Filter>Record\01월</Filter>
+    </ClCompile>
+    <ClCompile Include="200109.cpp">
+      <Filter>Record\01월</Filter>
+    </ClCompile>
+    <ClCompile Include="200113.cpp">
+      <Filter>Record\01월</Filter>
+    </ClCompile>
+    <ClCompile Include="200115.cpp">
+      <Filter>Record\01월</Filter>
+    </ClCompile>
+    <ClCompile Include="200116.cpp">
+      <Filter>Record\01월</Filter>
+    </ClCompile>
+    <ClCompile Include="200121.cpp">
+      <Filter>Record\01월</Filter>
+    </ClCompile>
+    <ClCompile Include="200122.cpp">
+      <Filter>Record\01월</Filter>
+    </ClCompile>
+    <ClCompile Include="200131_0.cpp">
+      <Filter>Record\01월</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -42,6 +42,9 @@
   <ItemGroup>
     <Filter Include="Record">
       <UniqueIdentifier>{9810b166-a490-4f98-97aa-7a8837791e7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Record\01월">
+      <UniqueIdentifier>{f5d6b683-e28f-4c40-a2dc-20f7b46684ff}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

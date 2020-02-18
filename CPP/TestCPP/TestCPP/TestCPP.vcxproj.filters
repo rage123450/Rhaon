@@ -10,7 +10,6 @@
     <ClCompile Include="200210_1.cpp">
       <Filter>Record</Filter>
     </ClCompile>
-    <ClCompile Include="200212_0.cpp" />
     <ClCompile Include="200108.cpp">
       <Filter>Record\01월</Filter>
     </ClCompile>
@@ -35,6 +34,10 @@
     <ClCompile Include="200131_0.cpp">
       <Filter>Record\01월</Filter>
     </ClCompile>
+    <ClCompile Include="200212_0.cpp">
+      <Filter>Record</Filter>
+    </ClCompile>
+    <ClCompile Include="200218_0.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="std.h" />

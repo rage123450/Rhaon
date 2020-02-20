@@ -37,10 +37,11 @@
     <ClCompile Include="200212_0.cpp">
       <Filter>Record</Filter>
     </ClCompile>
-    <ClCompile Include="200219_0.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="std.h" />
+    <ClCompile Include="200220_0.cpp" />
+    <ClCompile Include="200219_0.cpp">
+      <Filter>Record</Filter>
+    </ClCompile>
+    <ClCompile Include="200220_1.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Record">
@@ -49,5 +50,8 @@
     <Filter Include="Record\01월">
       <UniqueIdentifier>{f5d6b683-e28f-4c40-a2dc-20f7b46684ff}</UniqueIdentifier>
     </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h" />
   </ItemGroup>
 </Project>

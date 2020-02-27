@@ -1,0 +1,17 @@
+[ 할 거 ]
+
+
+
+[ 한 거 ]
+CTRMiniGameChildrenDays -> CTRMiniGameQuizQuiz 로 변경 ㅇㅇ
+토글기능, 체크기능 추가 ㅇㅇ
+SVN모니터 서버,쉐어 추가 ㅇㅇ
+CTRTimeFuncHandler 추가 ㅇㅇ
+기획서 보고 기술적으로 구현해야할 것 정리해두기
+- n초 동안 줄어드는 Time 바 ㅇㅇ
+- 주관식 입력부분
+- 시간처리 다른 방법도 찾아보기
+
+
+
+[ 안 거 ]

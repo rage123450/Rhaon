@@ -1,0 +1,16 @@
+[ 할 거 ]
+
+
+
+[ 한 거 ]
+돌아온 퀴즈퀴즈 기획서 검토 및 프로토타입 설계
+퀴즈 임시 텍스트 파일 파싱 테스트
+
+CTRMiniGameQuestion_Text : 퀴즈
+CTRMiniGameAnswer_Choice : 객관식
+CTRMiniGameAnswer_Choice : OX
+CTRMiniGameAnswer_Text : 단답형
+
+
+
+[ 안 거 ]

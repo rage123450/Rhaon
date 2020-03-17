@@ -1,0 +1,29 @@
+[ 할 거 ]
+
+
+
+[ 한 거 ]
+돌아온 퀴즈퀴즈 프로토타입 UI 확인
+돌아온 퀴즈퀴즈 프로토타입 코드 작업
+
+gui 확인 ㅇㅇ
+QuizQuiz_AnswerDlg : 4지선다
+QuizQuiz_AnswerDlg2 : OX
+QuizQuiz_AnswerDlg3 : 주관식
+QuizQuiz_Base : 메인
+QuizQuiz_Main : 시작
+QuizQuiz_Result : 결과
+QuizQuiz_RewardPopup : 보상창
+QuizQuiz_SubPopup : 고스탑
+QuizQuiz_SubPopup_ItemInfo : QuizQuiz_SubPopup에 이걸 붙일 프레임이 있다.
+
+gui를 순서대로 띄어보자. ㅇㅇ
+진입화면 ㅇㅇ
+시작화면 ㅇㅇ
+객관식 ㅇㅇ 
+OX ㅇㅇ
+주관식 ㅇㅇ
+
+
+
+[ 안 거 ]

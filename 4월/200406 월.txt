@@ -1,0 +1,20 @@
+[ 할 거 ]
+
+
+
+[ 한 거 ]
+돌아온 퀴즈퀴즈 코드 작업
+- 해상도 문제 수정
+- 서버 연동 코드 작업중
+
+해상도 문제 ㅇㅇ
+트렁크, 리소스 업데이트 ㅇㅇ
+서버 연동 코드 작성
+void CNetClientManager::requestQUIZQUIZ_Start(재화아이템 번호)
+void CNetClientManager::requestQUIZQUIZ_Question()
+void CNetClientManager::requestQUIZQUIZ_ANSWER(const std::string& strAnswer)
+void CNetClientManager::requestQUIZQUIZ_Reward()
+
+
+
+[ 안 거 ]

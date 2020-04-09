@@ -1,0 +1,48 @@
+[ 할 거 ]
+싱글모드 정상 작동되기끔  ㅇㅇ
+보상 리스트 파싱하는 함수 만들어서 테스트
+서버에서 문제점 발견해서 정리
+
+
+[ 한 거 ]
+돌아온 퀴즈퀴즈 코드 작업
+- 서버 연동 작업
+
+서버 연결 시키기 ㅇㅇ
+서버 연결 정리하기 ㅇㅇ
+서버 연동 테스트
+- 서버 연결이 안된다...왤까?
+- 11.65로 연결하면 되는데 여기서 어떻게 테스트를?
+- 일단 trunk 빌드, 서버 빌드후 서버 연결해보기
+- 영진님이 테스트 환경 만들어서 커밋해주셨다.
+
+showDialog()를 호출하면 
+게임 단계는 GAMESTEP_BEGIN_BEFORE이 되면서 게임시작 화면이 나옵니다.
+그러니까 참여가능횟수 랑 도전하기 이미지가 나오는 부분입니다.
+지금 코드를 보니까 OnRecv_QuizQuizStartAck가 호출되면 참여가능횟수가 갱신되면서
+게임 단계를 진행시킨다.
+
+
+
+[ 안 거 ]
+[ DB 추가하기 ]
+시작에서 odbc 검색하시면 "odbc 데이터 원본" 이 뜬다.
+이름 정하고(아무거나) 서버에는 192.168.9.192,1499 입력한다.
+다음을 누른다.
+아이디 sa
+비번 ^yalej#jsl
+DB 는 TR_GAMESVR_DB_ChildrensDay
+다음 -> 마침 -> 확인
+
+[ DB 바꾸기 ]
+ServerExecute 프로그램에 보면 
+File -> Change dbsetting.ini 라고 있다.
+커넥션 네임에 odbc 설정에서 지정한 이름
+그 밑에 Set IP 랑 Setting for Local test 도 한번씩 눌러주면 된다.
+
+[ 서버 띄울때 주의사항 ]
+server\output\agentserver\settings.ini 
+이 파일에 
+LoadBalanceip=none
+저 부분 none 으로 되어있는지 확인하시고 ip적혀있으면 none으로 해야한다.
+LoadBalanceip2도 있을 수 있으니 그것도 바꾸시고

@@ -1,0 +1,37 @@
+[ 할 거 ]
+
+
+
+[ 한 거 ]
+가정의 달 이벤트 코드 작업
+
+버그 목록
+
+성공,실패에 따른 사운드 출력 적용 ㅇㅇ
+CAudioManager::getInstance().playAudioEffectByFileName("sound\\buil_success.wav");
+CAudioManager::getInstance().playAudioEffectByFileName("sound\\buil_fail.wav");
+- 로컬 테스트 ㅇㅇ
+- 서버 테스트 ㅇㅇ
+ = 트렁크에 서버연결이 안 돼 있었다. 왤까? 로컬때 서버에 연결돼 있었다.
+
+
+
+[ 안 거 ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

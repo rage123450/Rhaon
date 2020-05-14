@@ -1,0 +1,41 @@
+[ 할 거 ]
+
+
+
+[ 한 거 ]
+- 커플 끊기 및 아이템 회수 오류
+추가된 아이템을 갱신하는 코드가 없었다.
+CTRCoupleSystem::updateRingItem(int ringItemNum) 
+이 함수를 호출하는 부분을 찾아야 했다.
+첫번째는 커플 깨질때, 두번째는 이혼할 때였다.
+그 다음 문제는 m_iCoupleRingNum 캐싱된 값이였다.
+클라 최초 접속시엔 해당 값이 0이였다. 그래서 깨질때(커플,결혼) 제대로 처리가 되지 않았다.
+그래서
+void CTRCoupleSystem::onRecvCoupleRemoveCoupleInfo(std::string strMateName) 에 쓰인 
+m_iCoupleRingNum은 CNetClientManager::getInstance().getMyCoupleInfo().coupleRingInfo.iCoupleRingNum 값을 불러와서 인자로 던져줬다.
+
+그리고 
+void CTRNetEventHandler::onRecvWeddingDivorceResult(const std::string & strMateNickname, eWeddingDivorceType eDivorceType, bool bEnforce)
+여기서(이혼 요청에 대한 결과가 오는 함수)
+CTRCoupleSystem::getInstacne().updateRingItem(CNetClientManager::getInstance().getMyCoupleInfo().coupleRingInfo.iCoupleRingNum); 
+추가했다.
+
+이별방법에는 2가지가 있었다.
+1. 이별통보라는 아이템이 있었다.
+2. 결혼 삐에로한테 가서 이별하기
+
+삐에로한테서 이별하는 부분은
+void CTRNetEventHandler::community_onRecvWeddingDivorced(const std::string & strFromNickname, const eWeddingDivorceType eDivorceType, const bool bEnforce)
+여기였다.
+
+
+
+
+[ 안 거 ]
+
+
+
+
+
+
+

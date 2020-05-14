@@ -490,8 +490,8 @@ void CTRCoupleRingChangeResultDlg::showDialog(int OrgRingItemNum,int ChangeRingI
 	{
 		if(ringLevel > iCoupleLevel10)
 		{
-			_updateRingItem(OrgRingItemNum);
-			_updateRingItem(ChangeRingItemNum);
+			CTRCoupleSystem::getInstacne().updateRingItem(OrgRingItemNum);
+			CTRCoupleSystem::getInstacne().updateRingItem(ChangeRingItemNum);
 		}
 		_showChangeRingDialog(ChangeRingItemNum);       
 	}
@@ -573,34 +573,5 @@ void CTRCoupleRingChangeResultDlg::_showAddItemChangeRingDialog(int OrgRingItemN
 		// 특별 추가 되는 아이템 이미지 설정
 		pCtrl = static_cast<CGUIItemImageCtrl *>(pDlg->findControl("ItemImg3", GUI_SUB_CONTROL_ITEM_IMAGE_CTRL));
 		if(pCtrl) pCtrl->setItemImage(pSpecialIteminfo->m_iUniqueNumber);
-	}
-}
-
-void CTRCoupleRingChangeResultDlg::_updateRingItem(int ringItemNum)
-{
-	const int nSpecialItemNum = static_cast<int>(CItemAttrTable::getInstance().getItemAttrFromItemDescNum(ringItemNum).m_attr[eltemAttr_JewelBox_AdditionItemDescNum]);
-	const CItemInfoNode * pCurSpecialIteminfo = CClientItemList::getInstance().getItemInfo(nSpecialItemNum);
-	if(pCurSpecialIteminfo)
-	{
-		if(pCurSpecialIteminfo->isSetItem())
-		{
-			std::vector<int> itemList;
-			itemList.reserve(16);
-
-			for(auto& i : pCurSpecialIteminfo->m_vecHaveSetItem)
-			{
-				const CItemInfoNode * pParent = CClientItemList::getInstance().getItemInfo(i->m_iUniqueNumber);
-				itemList.push_back(pParent->m_iUniqueNumber);
-			}
-
-			if(!itemList.empty())
-			{
-				CNetClientManager::getInstance().requestCharacterAvatarItemByItemNumList(itemList);
-			}
-		}
-		else
-		{
-			CNetClientManager::getInstance().requestCharacterAvatarItemByItemNum(pCurSpecialIteminfo->m_iUniqueNumber);
-		}
 	}
 }

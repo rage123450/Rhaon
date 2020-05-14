@@ -123,6 +123,5 @@ public:
 private:
 	void _showChangeRingDialog(int ringItemNum);
 	void _showAddItemChangeRingDialog(int OrgRingItemNum,int ChangeRingItemNum);
-	void _updateRingItem(int ringItemNum);
 };
 

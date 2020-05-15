@@ -32,7 +32,10 @@ void CTRNetEventHandler::community_onRecvWeddingDivorced(const std::string & str
 
 
 [ 안 거 ]
-
+버그를 수정하고 192에서도 테스트를 해볼 것.
+이번 경우처럼 이혼을 하는 방법이 2가지가 있었는데 몇가지 방법으로 해당 문제에 접근할 수 있는지 확인할 것
+문제가 있다고 하면 직접 테스트해볼 것
+문제가 있다고 하는 것에 너무 매달리면 안된다. 사실과 다를 확률이 있다.
 
 
 

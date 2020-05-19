@@ -1,0 +1,20 @@
+[ 할 거 ]
+
+
+
+[ 한 거 ]
+pButton->setEventNotifyListener(this);
+버튼 컨트롤에 setEventNotifyListener(this);를 하고
+onButtonEventNotify 여기서 응답 처리를 한다.
+
+
+
+[ 안 거 ]
+Ctrl + Shift + G : 커서가 있는 헤더 파일로 간다.(헤더 파일명에 커서가 깜빡일 경우)
+
+
+
+
+
+
+

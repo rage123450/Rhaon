@@ -1,0 +1,33 @@
+[ 할 거 ]
+- 상점의 특정탭으로 보내는 함수 찾기
+- 상점에 특정탭 클릭시 갱신하는 부분 찾기
+
+
+[ 한 거 ]
+컨트롤 전체 이동 ㅇㅇ
+컨트롤 정렬 ㅇㅇ
+출석 시스템 이름 정하기 : attendance system
+출석 시스템 기획서 보고 정리하기 ㅇㅇ
+
+트렁크 서버 열어서 테스트 ㅇㅇ
+- 상점탭 지우는 부분 찾기  ㅇㅇ
+ SAFE_CLOSE_DELETE(m_shopDialogCategory);
+
+- 이벤트 커뮤니티 아이콘 클릭시 나오는 처리 찾기 ㅇㅇ
+ Frame_Top_AllMenuDlg.gui -> EveryDayBtn
+
+- 상점으로 보내는 함수 찾기 ㅇㅇ
+ CTRNetPlayManager::getInstance().openShopUI();
+
+
+
+[ 안 거 ]
+IN OUT
+__in, __out, __in_opt
+
+
+
+
+
+
+

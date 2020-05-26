@@ -1,0 +1,40 @@
+[ 할 거 ]
+브랜치
+- 상점에 특정탭 클릭시 갱신하는 부분 찾기
+
+
+
+[ 한 거 ]
+상점의 특정탭으로 보내는 함수 찾기 ㅇㅇ
+- 찾았는데 중계를 어떻게 할 건가?
+- 우선 출석체크 버튼에 맵핑해서 테스트해 볼 것
+ = 진입 순서
+bool CTRBottomBarDlg::onButtonClick(CGUIControlID ctrlID, CCommandID cmdID)
+CTRNetPlayManager::getInstance().openShopUI();
+CTRUserInterface::openUISingleton<CTRShopRenewalUI>();
+m_pCurUI->_openUI();
+openUI();
+CTRShopManager::getInstance().CreateUI();
+_CreateUI(parentID);
+m_shopDialog->SelectCategory(CTRShopManager::CATEGORY_INDEX_MAIN, 1, 0);
+
+브랜치 뺌 ㅇㅇ
+브랜치 서버 연결 ㅇㅇ
+클라 - 서버 연결 ㅇㅇ
+WorkDefines.h에서 다음 부분 주석 처리하니까 연결되었다.
+// #ifndef _SHUFFLED_PROTOCOL_		//<-- Protocol Shuffle
+// #define _SHUFFLED_PROTOCOL_		// 프로토콜 파싱문제로 잠시 막음
+// #endif
+
+
+
+
+[ 안 거 ]
+
+
+
+
+
+
+
+

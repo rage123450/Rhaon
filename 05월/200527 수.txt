@@ -1,0 +1,25 @@
+[ 할 거 ]
+
+
+
+[ 한 거 ]
+상점에서 n초당 슬라이드되는 부분 코드 찾기 ㅇㅇ
+- 새로운 클래스에서 테스트 ㅇㅇ
+- 이미지 다른거로 테스트 ㅇㅇ
+- 이미지 크기 조절을 어떻게 하는가?
+ = 제이슨 파일 설정값은 영향 X
+ = UI파일 설정? ㅇㅇ
+   gui\Renewal_shopDlg_Sub_Main.gui 에서 ImgFrame에 설정된 Size크기에 영향을 받는다.
+- 다른 제이슨 파일로도 테스트 ㅇㅇ
+- 작은 동그라미 어떻게 끄는지? 찾음
+ void CTRAutoSlideView::Show(CGUIDialog* dlg, std::string& scriptFileName) 
+ void CTRAutoSlideView::_InitControl()
+
+
+
+[ 안 거 ]
+
+
+
+
+

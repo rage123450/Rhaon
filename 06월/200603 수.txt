@@ -1,0 +1,25 @@
+[ 할 거 ]
+
+
+
+[ 한 거 ]
+macro 불필요한거 정리 및 정리
+AttendanceSystem클래스 포인터 획득 함수 추가
+
+서버 쉐어 코드 클라에 적용 ㅇㅇ
+- TRNetEventHandler
+- CTRContentsHandler
+
+TRDBG_OUTPUT_ERROR 테스트 ㅇㅇ
+- 그런데 155라는 숫자에 많은게 쓰여서 DBG_OUT에 179로 쓰기로 했다.
+
+TRAttendanceSystem 클래스 작업 ㅇㅇ
+
+
+
+[ 안 거 ]
+
+
+    
+
+
